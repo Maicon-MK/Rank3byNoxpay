@@ -145,7 +145,7 @@ Backend
 ## **Inicie o servidor**
   **Na pasta frontend**
 ```bash
-  npm run start
+  npm start
 ```
 **Na pasta beckend**
 ```bash
