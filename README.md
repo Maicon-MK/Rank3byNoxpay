@@ -149,7 +149,7 @@ Backend
 ```
 **Na pasta beckend**
 ```bash
-  python backend.py
+  python __main__.py
 ```
 - Para exporta o arquivo mysql:
  Abra o mysql > Conect  ao banco > Clique em **SERVER** > Data import > Selecione a pasta onde esta o arquivo mysql > start import.
