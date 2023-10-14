@@ -105,7 +105,7 @@ https://chakra-ui.com/getting-started
 - Clone o projeto
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/Maicon-MK/Rank3byNoxpay.git
 ```
 
 - Entre no diretório do projeto
