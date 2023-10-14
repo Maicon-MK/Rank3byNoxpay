@@ -19,7 +19,6 @@ def vizualizar_coins():
     cursor = conn.cursor(dictionary=True)  
     #SQL query to show all coins with votes and id
     query = "SELECT * FROM cryptocurrencies"
-
     cursor.execute(query)
     result = cursor.fetchall()
     print(result)
@@ -36,10 +35,8 @@ def add_vote(id):
     cursor.execute(query, values)
     result = cursor.fetchone()
     print(result)
-
     if result == None:
         return jsonify("cryptocurrency not found")
-
     print(id)
     return jsonify(result)
 
@@ -48,13 +45,9 @@ def add_vote(id):
 def adicionar_voto(id):
     conn = mysql.connector.connect(**db_config)
     cursor = conn.cursor()
-
     #SQL query to add vote in selected currency
     query = "UPDATE cryptocurrencies SET vote = vote +1 WHERE id=%s"
-
-    
     cursor.execute(query, (id,))
-
     conn.commit()
     conn.close()
     return jsonify({"message": "Vote added successfully."}), 200
@@ -64,7 +57,6 @@ def adicionar_voto(id):
 def listar_votos():
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor(dictionary=True)  
-
         # SQL query to fetch all votes ordered from highest to lowest
         query = "SELECT * FROM cryptocurrencies ORDER BY vote DESC"
         cursor.execute(query)
