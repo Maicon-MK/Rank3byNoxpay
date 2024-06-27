@@ -1,5 +1,5 @@
 
-# RANK3  by NOXPAY
+# RANK3  
 Uma pequena aplicação que lista criptomoedas e as salva em um banco de dados, que permite por meio de um sistema de voto, visualiza-las em um ranking de popularidade.
 
 Funcionalidades
